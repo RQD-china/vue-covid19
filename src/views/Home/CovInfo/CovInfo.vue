@@ -17,13 +17,14 @@
     <div class="hot">
       <div class="title">
         <img class="icon" src="../../../assets/images/hot.png" alt="" />
-        <a href="##"
-          >查看更多<img src="../../../assets/images/more.png" alt=""
-        /></a>
+        <!-- <a href="##"
+          @click="more">查看更多<img src="../../../assets/images/more.png" alt=""
+        /></a> -->
       </div>
       <ul class="list">
         <li v-for="item in news" :key="item.id">
           <span>最新</span> {{ item.title }}
+          <a :href=item.sourceUrl>
           <img src="../../../assets/images/right.png" alt="" />
         </li>
       </ul>
