@@ -24,8 +24,8 @@
       <ul class="list">
         <li v-for="item in news" :key="item.id">
           <span>最新</span> {{ item.title }}
-          <a :href=item.sourceUrl>
-          <img src="../../../assets/images/right.png" alt="" />
+           <a :href=item.sourceUrl >
+          <img src="../../../assets/images/right.png" alt="" /></a>
         </li>
       </ul>
     </div>
